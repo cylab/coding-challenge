@@ -1,12 +1,12 @@
-﻿import { Company } from "./Company";
-import { Classification } from "./Classification";
+﻿import { Classification } from "./Classification";
+import { Company } from "./Company";
 
 export class CompanyRepository {
-    GetById(id): Company {
+    public getById(id: string): Company | undefined {
         return {
-            Id: id,
-            Name: "test",
-            Classification: Classification.Bronze
-       }
+            id: id,
+            name: "test",
+            classification: Classification.Bronze,
+       };
     }
 }

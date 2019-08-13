@@ -1,7 +1,9 @@
 import { Classification } from "./Classification";
 
 export class Company {
-    Id;
-    Name;
-    Classification: Classification;
+    constructor(
+        readonly id: string,
+        readonly name: string,
+        readonly classification: Classification,
+    ) {}
 }
